@@ -1100,4 +1100,11 @@
     <integer name="config_sysCPUTempMultiplier">1000</integer>
     <integer name="config_sysBatteryTempMultiplier">10</integer>
 
+    <!-- Default color temperature, in Kelvin, to tint the screen when Night display is
+         activated. -->
+    <integer name="config_nightDisplayColorTemperatureDefault">4339</integer>
+
+    <!-- Maximum color temperature, in Kelvin, supported by Night display.
+         Setting this to track the default color temperature value (currently 6500K). -->
+    <integer name="config_nightDisplayColorTemperatureMax">6500</integer>
 </resources>
