@@ -29,7 +29,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Spark specific flags
 TARGET_BUILD_LAWNCHAIR := true
-WITH_GAPPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 
 # Device identifier
