@@ -30,6 +30,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Spark specific flags
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+# WITH_GAPPS := true
+# SPARK_BUILD_TYPE := OFFICIAL
 
 # Device identifier
 PRODUCT_NAME := spark_cepheus
