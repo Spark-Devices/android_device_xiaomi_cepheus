@@ -17,8 +17,8 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 # Spark specific flags
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GAPPS := true
-SPARK_BUILD_TYPE := OFFICIAL
+# WITH_GAPPS := true
+# SPARK_BUILD_TYPE := OFFICIAL
 
 # GMS OR NOT?
 WITH_GMS=true
