@@ -8,13 +8,25 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common SPARK stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-PRODUCT_NAME := lineage_cepheus
+# Spark specific flags
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GAPPS := true
+SPARK_BUILD_TYPE := OFFICIAL
+
+# GMS OR NOT?
+WITH_GMS=true
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := spark_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi

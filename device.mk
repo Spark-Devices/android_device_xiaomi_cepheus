@@ -24,13 +24,13 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    libMegviiFacepp-0.5.2 \
-    libmegface
+     libMegviiFacepp-0.5.2 \
+     libmegface
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-spark
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28

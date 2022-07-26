@@ -10,6 +10,14 @@ include device/xiaomi/sm8150-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/cepheus
 
 BUILD_BROKEN_DUP_RULES := true
+SELINUX_IGNORE_NEVERALLOWS := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := proton
+
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Display
 TARGET_SCREEN_DENSITY := 440

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cepheus.mk
+    $(LOCAL_DIR)/spark_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_cepheus-user \
-    lineage_cepheus-userdebug \
-    lineage_cepheus-eng
+    spark_cepheus-user \
+    spark_cepheus-userdebug \
+    spark_cepheus-eng

@@ -375,3 +375,9 @@ vendor/etc/thermal-normal.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermald-devices.conf
+
+# TESTING
+vendor/lib/libmegface.so
+vendor/lib64/libmegface.so
+vendor/lib/libMegviiFacepp-0.5.2.so
+vendor/lib64/libMegviiFacepp-0.5.2.so
