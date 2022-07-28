@@ -697,4 +697,11 @@
     <!-- List of comma separated package names for which we the system will not show crash, ANR,
          etc. dialogs. -->
     <string name="config_appsNotReportingCrashes">com.google.android.tts,com.google.android.as</string>
+
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
+    <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
+         will be used. -->
+    <integer name="config_burnInProtectionMaxRadius">70</integer>
 </resources>
