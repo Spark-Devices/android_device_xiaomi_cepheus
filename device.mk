@@ -97,10 +97,15 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    libdng_sdk.vendor
+    libdng_sdk.vendor \
+    libshim_megvii \
+
+ifeq ($(WITH_GAPPS),true)
+TARGET_NO_PREBUILT_CAMERA := true
 
 PRODUCT_PACKAGES += \
-    libshim_megvii
+    GCamMGC
+endif
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
